@@ -1,0 +1,7 @@
+<p>qr-code works!</p>
+<div *ngFor="let qrData of qrDataArray">
+    <qrcode [qrdata]="qrData" [allowEmptyString]="true"></qrcode>
+</div>
+<!-- <input type="text" [(ngModel)]="newQrData" placeholder="Add QR Code data"> -->
+<input type="number" id="quantity" name="quantity" [(ngModel)]="newQrData" placeholder="Number of QR Codes to Generate">
+<button (click)="addQrCode()">Add QR Code</button>
